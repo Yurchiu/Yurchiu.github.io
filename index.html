@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+  <meta name="msvalidate.01" content="A7B4DB5A7BF5E5C6E52E34BB024D6319" />
+  <meta name="description" content="本站为 Yurchiu 用来记录 OI、笔记、感想的 Blog，欢迎来到本博客！希望我们能相互交流，共同进步～">
+  <meta http-equiv='content-language' content='zh-cn'>
+  <title>
+  	
+
+    
+
+  	Yurchiu's Blog
+  </title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.17/sweetalert2.all.min.js"></script>
+  <script src="https://cdn.staticfile.org/sketch.js/1.0/sketch.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.min.js"></script>
+  <script src="/js/chaffle.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/search.js"></script>
+  <script src="/js/initial.js"></script>
+  <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/KaTeX/0.16.6/katex.min.css">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  
+     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  
+<!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Yurchiu's Blog" type="application/atom+xml">
+</head>
+  <body style="background-image: url(/img/new-bgp.png);">
+    <div id="YurLoading" class="YurLoading">
+      <div class="inner">
+        <div class="line-wrap"><div class="line"></div></div>
+        <div class="line-wrap"><div class="line"></div></div>
+        <div class="line-wrap"><div class="line"></div></div>
+        <div class="line-wrap"><div class="line"></div></div>
+        <div class="line-wrap"><div class="line"></div></div>
+      </div>
+    </div>
+    <div class="topbar">
+	<a onclick="topbarToggle()" class="topbar-menu" style="cursor: pointer;">
+		<i class="fa fa-bars"></i>
+	</a>
+	<a href="/" class="topbar-title">
+		<i class="fa fa-home"></i> Yurchiu's Blog
+	</a>
+	<a target="_blank" rel="noopener" href="https://github.com/Yurchiu" class="topbar-title">
+		<i class="fa fa-github"></i>
+	</a>
+</div>
+    <div id="article-container">
+      <div class="sidebar">
+  <div class="avatar-container">
+  	<img src="/img/avatar.png" class="avatar revolve" />
+  </div>
+
+  <div class="sidebar-author">
+    Yurchiu<br />
+    <span class="mini-text">An AFO whker.</span>
+  </div>
+
+  <div class="sidebar-list-container">
+    <div style="height: 10px;"></div>
+  	
+      
+      
+  	  <a class="list-group-item-current" href="/index.html"><div><i class="fa fa-home fa-fw"></i>&nbsp; 首页</div>
+        
+        
+          
+      </a>
+    
+      
+      
+  	  <a class="list-group-item" href="/archives/index.html"><div><i class="fa fa-tasks fa-fw"></i>&nbsp; 归档</div>
+        
+        
+          
+  	    	  <div class="badge">2</div>
+          
+      </a>
+    
+      
+      
+  	  <a class="list-group-item" href="/tags"><div><i class="fa fa-tags fa-fw"></i>&nbsp; 标签</div>
+        
+        
+          
+  	    	  <div class="badge">1</div>
+          
+      </a>
+    
+      
+      
+  	  <a class="list-group-item" href="/categories"><div><i class="fa fa-th-large fa-fw"></i>&nbsp; 分类</div>
+        
+        
+          
+  	    	  <div class="badge">1</div>
+          
+      </a>
+    
+      
+      
+  	  <a class="list-group-item" href="/pages/mood"><div><i class="fa fa-photo fa-fw"></i>&nbsp; 说说</div>
+        
+        
+          
+      </a>
+    
+      
+      
+  	  <a class="list-group-item" href="/pages/about"><div><i class="fa fa-user-o fa-fw"></i>&nbsp; 关于</div>
+        
+        
+          
+      </a>
+    
+      
+      
+  	  <a class="list-group-item" href="/pages/chat"><div><i class="fa fa-commenting-o fa-fw"></i>&nbsp; 留言</div>
+        
+        
+          
+      </a>
+    
+      
+      
+  	  <a class="list-group-item" href="/pages/link"><div><i class="fa fa-link fa-fw"></i>&nbsp; 链接</div>
+        
+        
+          
+      </a>
+    
+      
+      
+  	  <a class="list-group-item" href="/pages/settings"><div><i class="fa fa-cog fa-fw"></i>&nbsp; 设置</div>
+        
+        
+          
+      </a>
+    
+    <div style="height: 200px;"></div>
+  </div>
+
+  <div class="sidebar-footer">
+  	<div class="item" id="back2Top" data-bs-toggle="tooltip" title="顶部">
+  		<i class="fa fa-arrow-circle-up"></i>
+  	</div>
+    <div class="item" id="back2Down" data-bs-toggle="tooltip" title="底部">
+      <i class="fa fa-arrow-circle-down"></i>
+    </div>
+  	<div class="item" data-bs-toggle="tooltip" title="RSS">
+  		<a href="/atom.xml"><i class="fa fa-feed"></i></a>
+  	</div>
+  	<div class="item"  data-bs-toggle="tooltip" title="搜索">
+  		<a href="/pages/search"><i class="fa fa-search"></i></a>
+  	</div>
+  </div>
+</div>
+      <div class="article">
+        <div class="vertical fake-sidebar"></div>
+        <div class="vertical post">
+          
+          <div class="header">
+  <h1 class="title">Yurchiu's Blog</h1>
+  <div class="meta">Per aspera ad astra. 循此苦旅，以达天际。</div>
+</div>
+
+  
+  
+  
+    <div class="post-item">
+      <div>
+        
+          <div class="title_fa">
+            
+              <i class="fa fa-file-text-o fa-2x fa-border fa-fw"></i>
+            
+              <a class="title" href="/2024/07/29/LaTeX-Test/" data-bs-toggle="tooltip" title="LaTeX-Test">LaTeX-Test</a>
+          </div>
+        
+  
+        <div class="excerpt">
+          
+            ∑i=1+∞=+∞2\Huge\sum_{i=1}^{+\infty}=\dfrac{+\infty}{2}
+i=1∑+∞​=2+∞​
+主=6\Huge\text{主}=6
+主=6
+
+          
+        </div>    
+        <hr />
+        <div class="meta">
+          <span><i class="fa fa-user-o"></i>
+            
+              Yurchiu
+            
+          </span>
+          <span><i class="fa fa-clock-o"></i> 2024-07-29, 22:15:45</span>
+          
+        </div>
+      </div>
+    </div>
+
+  
+  
+  
+    <div class="post-item">
+      <div>
+        
+          <div class="title_fa">
+            
+              <i class="fa fa-file-text-o fa-2x fa-border fa-fw"></i>
+            
+              <a class="title" href="/2024/07/29/hello-world/" data-bs-toggle="tooltip" title="Hello World">Hello World</a>
+          </div>
+        
+  
+        <div class="excerpt">
+          
+            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer ...
+          
+        </div>    
+        <hr />
+        <div class="meta">
+          <span><i class="fa fa-user-o"></i>
+            
+              Yurchiu
+            
+          </span>
+          <span><i class="fa fa-clock-o"></i> 2024-07-29, 19:23:09</span>
+          
+        </div>
+      </div>
+    </div>
+
+
+          <div class="avatar-container" style="padding: 50px;">
+            <img src="/img/avatar.png" class="avatar revolve" style="height: 12%; width: 12%;"/>
+            <div style="text-align: center; margin-top: 3%;">By Yurchiu.</div>
+          </div>
+        </div>
+        <div class="vertical toolbar">
+  <div class="tab-page">
+    <div class="tabTitle tb-tabTitle">
+      <ul>
+        <li class="current"><i class="fa fa-random"></i></li>
+        <li><i class="fa fa-refresh"></i></li>
+        
+        <li><i class="fa fa-circle-o-notch"></i></li>
+        
+     </ul>
+    </div>
+    <div class="tabContent tb-tabContent">
+      <div>
+
+<!--  1-tab  -->
+<div class="title">随机文章<span class="sidetitle">回味旧文</span></div>
+<div class="item no-lrpadding">
+  <a class="post-link" href="/2024/07/29/hello-world/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">Hello World</div></div></a><a class="post-link" href="/2024/07/29/LaTeX-Test/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">LaTeX-Test</div></div></a>
+</div>
+<!--  END 1-tab  -->
+
+      </div>
+      <div class="hide">
+<!--  2-tab  -->
+
+<div class="title">最近更新<span class="sidetitle">旧文更新</span></div>
+<div class="item no-lrpadding">
+  <a class="post-link" href="/2024/07/29/LaTeX-Test/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">LaTeX-Test</div></div></a><a class="post-link" href="/2024/07/29/hello-world/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">Hello World</div></div></a>
+</div>
+<!--  END 2-tab  -->
+
+      </div>
+      <div class="hide">
+<!--  3-tab  -->
+
+
+  <div class="title">其他物件<a
+    data-bs-toggle="tooltip" href="
+    javascript: document.body.contentEditable='true';
+    document.designMode='on';void(0);"
+    title="彩蛋：点击我，可以编辑本页面！"
+    target="_self" class="sidetitle">杂物收纳</a></div>
+
+  <div style="height: 10px;"></div>
+
+  <div class="item">
+    <tag style="display: inline-block;">Hitokoto</tag><br><br>
+    <div id="hitokoto">Yurchiu 说，除了她以外的人都很强！嘤嘤嘤~~</div>
+    <script>
+      fetch('https://v1.hitokoto.cn')
+        .then(function (res){return res.json();})
+        .then(function (data) {
+          $("#hitokoto").html(data.hitokoto+"<br><br><div style='text-align: right;'>——"+data.from+"</div>");
+        })
+        .catch(function (err) {console.error(err);})
+    </script>
+  </div>
+
+  <div class="item">
+    <div id="timeprogress"></div>
+    <script>
+      var myDate = new Date();
+      var hours = myDate.getHours();
+      var minutes = myDate.getMinutes();
+      minutes = hours * 60 + minutes;
+      var pro = minutes / 14.4;
+      var innerhtml="\
+        <div class='progress' style='height: 20px'>\
+          <div data-bs-toggle='tooltip'\
+               class='progress-bar'\
+               title='时间已过去了 "+pro.toFixed(2)+"%'\
+               style='width: "+pro+"%;\
+               background: #4caf50; color: #fff;'>"
+               +pro.toFixed(0)+"%\
+          </div>\
+        </div>";
+      document.getElementById("timeprogress").innerHTML = innerhtml;
+    </script>
+  </div>
+
+<!--  END 3-tab  -->
+
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="item">
+    <div class="title">博客信息</div>
+    <div class="list-group">
+      <div class="list-group-item"><div><i class="fa fa-file-text-o fa-fw"></i>
+        文章数目</div><div class="badge">2</div>
+      </div>
+      <div class="list-group-item"><div><i class="fa fa-refresh fa-fw"></i>
+        最近更新</div><div class="badge">07-29</div>
+      </div>
+      <div class="list-group-item"><div><i class="fa fa-font fa-fw"></i>
+        本站字数</div><div class="badge">97</span></div>
+      </div>
+    </div>
+  </div>
+
+  
+    <div class="item">
+      <div class="title">标签云</div>
+      <div class="toolbar-tag-cloud">
+        <a href="/tags/LaTeX/" style="font-size: 14px; color: #fff">LaTeX</a>
+      </div>
+    </div>
+   
+
+  <script>
+    $(function(){
+      var ali = $('.tb-tabTitle>ul>li');
+      var aDiv = $('.tb-tabContent>div');
+      var timeId = null;
+      ali.click(function(){
+        var _this = $(this);
+        timeId = setTimeout(function(){
+          _this.addClass('current').siblings().removeClass('current');
+          var index = _this.index();
+          aDiv.eq(index).show().siblings().hide();
+        });
+      });
+  });
+  </script>
+</div> 
+      </div>
+      <div class="footer">
+  <p class="text-left">©2019-2023 <a target="_blank" rel="noopener" href="https://github.com/yz-hs">Yurchiu</a>. All rights reserved.</p>
+  <p class="text-right">Theme <a target="_blank" rel="noopener" href="https://github.com/yz-hs/cutie">Cutie</a>, by Yurchiu.</p>
+</div>
+
+
+
+<div class="natsuki-container" style="width: 120px" data-bs-toggle="tooltip" title="Don't touch me! qwq">
+    <img id="natsuki2" width="100%" height="100%" src="/img/natsuki2.png">
+    <img id="natsuki1" width="100%" height="100%" src="/img/natsuki1.png">
+</div>
+<script type="text/javascript">
+    $("#natsuki1").click(function(){
+        $("#natsuki1").hide();
+        $("#natsuki2").show();
+        $("#natsuki2").css("animation","natsuki 0.55s cubic-bezier(0, 0, 0, 1)");
+    });
+    $("#natsuki2").each(function(){
+        $(this)[0].addEventListener("animationend",function() {
+        $("#natsuki2").hide();
+        $("#natsuki1").show();
+        $(this).css("animation","");
+        });
+    });
+</script>
+
+
+
+
+    <script>if(!readData("special")) $("html").addClass("none");</script>
+
+
+<script>
+    if(!readData("color"))
+        $("html").addClass("color-white");
+
+    if(!true)
+        $(".toolbar").hide();
+
+    if(readData("color")==4 || "white"=="night"&&!readData("color")){
+        $("body").css("opacity","0.85");
+        $("body").css("background-image","url(/img/night-bgp.jpg)");
+        window.document.documentElement.setAttribute( "data-theme", "dark" );
+    }
+
+    $('img').attr("onerror","this.src='/img/error.jpg';this.onerror=null");
+
+    initial();
+</script>
+    </div>
+    <!-- It is not contained by Pjax. -->
+
+    <script rel="preload" src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" defer></script>
+    <script rel="preload" src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+    <meting-js class="meting-js appear" fixed="ture" server="netease" type="playlist" id="8524070964"></meting-js>
+
+
+<script>
+    consolePrint();
+    HideIt();
+</script>
+
+<link rel="stylesheet" href="/custom/custom.css">
+<script src="/custom/custom.js"></script>
+
+
+  </body>
+</html>
