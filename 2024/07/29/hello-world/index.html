@@ -258,7 +258,33 @@
   <div class="comments">
     
 
-      Yurchiu 并未使用评论功能哦！
+      <div class="giscus"></div>
+      <script>
+        function my_giscus_load(){
+          var x=document.createElement("script");
+          x.setAttribute("src","https://giscus.app/client.js");
+          x.setAttribute("data-repo","Yurchiu/yurchiu.github.io");
+          x.setAttribute("data-repo-id","R_kgDOMcinWw");
+          x.setAttribute("data-category","Announcements");
+          x.setAttribute("data-category-id","DIC_kwDOMcinW84ChQVM");
+          x.setAttribute("data-mapping","pathname");
+          x.setAttribute("data-strict","0");
+          x.setAttribute("data-reactions-enabled","1");
+          x.setAttribute("data-emit-metadata","0");
+          x.setAttribute("data-input-position","top");
+          x.setAttribute("data-theme","light");
+
+          if(readData("color")==4 || "white"=="night"&&!readData("color"))
+            x.setAttribute("data-theme","dark");
+
+          x.setAttribute("data-lang","zh-CN");
+          x.setAttribute("data-loading","lazy");
+          x.setAttribute("crossorigin","anonymous");
+          x.setAttribute("async","true");
+          document.head.appendChild(x);
+        }
+        my_giscus_load();
+      </script>
 
     
 
