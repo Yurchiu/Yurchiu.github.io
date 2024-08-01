@@ -28,18 +28,23 @@
   <script src="/js/main.js"></script>
   <script src="/js/search.js"></script>
   <script src="/js/initial.js"></script>
-  <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/KaTeX/0.16.6/katex.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
   <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/vs2015.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.css">
   <link rel="stylesheet" href="/css/style.css">
+
   
      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   
      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
   
-<!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Yurchiu's Blog" type="application/atom+xml">
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Yurchiu's Blog" type="application/atom+xml">
 </head>
   <body style="background-image: url(/img/new-bgp.png);">
     <div id="YurLoading" class="YurLoading">
@@ -189,12 +194,11 @@
        
     </span>
     <span><i class="fa fa-clock-o"></i> 2023-01-10, 00:25:16</span>
-    <span><i class="fa fa-font"></i> 190</span>
+    <span><i class="fa fa-font"></i> 195</span>
     
       <span><i class="fa fa-thumb-tack"></i> 置顶</span>
+
     
-      <script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-      <span id="busuanzi_container_site_pv"><i class="fa fa-user"></i><span id="busuanzi_value_site_pv"></span></span>
     
     <span class="hideBars" onclick="hideBars()"><i class="fa fa-eye-slash"></i>
       隐藏左右两栏
@@ -217,24 +221,31 @@
 </div>
 
 <div class="post-text">
-  <h1 id="Theme-Cutie"><a href="#Theme-Cutie" class="headerlink" title="Theme Cutie"></a>Theme Cutie</h1><p><img src="https://cdn.jsdelivr.net/gh/yz-hs/PicGo/intro4.png"></p>
+  <h1 id="theme-cutie"><a class="markdownIt-Anchor" href="#theme-cutie"></a> Theme Cutie</h1>
+<p><img src="https://cdn.jsdelivr.net/gh/yz-hs/PicGo/intro4.png" alt="" /></p>
 <p><strong>This theme is still under development and maintenance. If there are bugs, optimization requirements, etc., you can Issue, PR or leave a message in <a href="/pages/chat">here</a>.</strong></p>
 <p>中文版文档，本主题的完整说明：<a href="/2020/08/22/Cutie%20%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/">Chinese version</a>。</p>
 <span id="more"></span>
-
-<h2 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h2><p>In order to learn relevant knowledge and make a good-looking theme, I made this. The layout of the theme is like <a target="_blank" rel="noopener" href="https://www.ihewro.com/archives/489/">handsome</a>, a typecho theme. Most of the codes were originally programmed by me, while the rest were from the Internet, for instance, <a target="_blank" rel="noopener" href="https://mkblog.cn/">mkBlog</a>.</p>
-<h2 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h2><p>You can install it by running this command:</p>
-<pre><code class="bash">git clone https://github.com/yz-hs/cutie.git
+<h2 id="background"><a class="markdownIt-Anchor" href="#background"></a> Background</h2>
+<p>In order to learn relevant knowledge and make a good-looking theme, I made this. The layout of the theme is like <a target="_blank" rel="noopener" href="https://www.ihewro.com/archives/489/">handsome</a>, a typecho theme. Most of the codes were originally programmed by me, while the rest were from the Internet, for instance, <a target="_blank" rel="noopener" href="https://mkblog.cn/">mkBlog</a>.</p>
+<h2 id="install"><a class="markdownIt-Anchor" href="#install"></a> Install</h2>
+<p>You can install it by running this command:</p>
+<pre class="highlight"><code class="bash">git <span class="hljs-built_in">clone</span> https://github.com/yz-hs/cutie.git
 </code></pre>
-<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><p>Firstly, you need to set the value of <code>theme</code> in the blog configuration file (<code>/path-to-your-blog/_config.yml</code>) to <code>cutie</code> to enable this theme.</p>
+<h2 id="usage"><a class="markdownIt-Anchor" href="#usage"></a> Usage</h2>
+<p>Firstly, you need to set the value of <code>theme</code> in the blog configuration file (<code>/path-to-your-blog/_config.yml</code>) to <code>cutie</code> to enable this theme.</p>
 <p>Then, you need to read documents to further configure the theme and learn more about this theme. Most of them are in Chinese.</p>
 <p><strong>This theme relies on some plug-ins. Please be sure to read the <a href="/2020/08/22/Cutie%20%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/">Chinese version</a> first.</strong></p>
-<h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><p><a href="https://yurchiu.github.io/">https://Yurchiu.github.io/</a></p>
-<h2 id="Maintainers"><a href="#Maintainers" class="headerlink" title="Maintainers"></a>Maintainers</h2><p>@<a target="_blank" rel="noopener" href="https://github.com/Yurchiu">Yurchiu</a></p>
-<h2 id="Contributors"><a href="#Contributors" class="headerlink" title="Contributors"></a>Contributors</h2><p>@<a target="_blank" rel="noopener" href="https://github.com/Yurchiu">Yurchiu</a></p>
+<h2 id="demo"><a class="markdownIt-Anchor" href="#demo"></a> Demo</h2>
+<p><a href="https://Yurchiu.github.io/">https://Yurchiu.github.io/</a></p>
+<h2 id="maintainers"><a class="markdownIt-Anchor" href="#maintainers"></a> Maintainers</h2>
+<p>@<a target="_blank" rel="noopener" href="https://github.com/Yurchiu">Yurchiu</a></p>
+<h2 id="contributors"><a class="markdownIt-Anchor" href="#contributors"></a> Contributors</h2>
+<p>@<a target="_blank" rel="noopener" href="https://github.com/Yurchiu">Yurchiu</a></p>
 <p>@<a target="_blank" rel="noopener" href="https://github.com/tsxc-github">tsxc</a></p>
 <p>Feel free to dive in! Open an issue or submit PRs.</p>
-<h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><p>MIT</p>
+<h2 id="license"><a class="markdownIt-Anchor" href="#license"></a> License</h2>
+<p>MIT</p>
 
   
   <br /><hr /><br />
@@ -250,13 +261,23 @@
   <br />
   <div class="end-post-meta">
     
-		  <span><a href="/tags/Hexo/index.html"><i class="fa fa-tag"></i> Hexo</a></span>
+		  <span><a href="/tags/Hexo/index.html"><i class="fa fa-fw fa-tag"></i> Hexo</a></span>
 	 
-		  <span><a href="/tags/Cutie/index.html"><i class="fa fa-tag"></i> Cutie</a></span>
+		  <span><a href="/tags/Cutie/index.html"><i class="fa fa-fw fa-tag"></i> Cutie</a></span>
 	 
   </div>
+
   <div class="end-post-meta">
-    <span><i class="fa fa-refresh"></i> 最后更新：2024-08-01, 13:56:06</span>
+    
+      <script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <span id="busuanzi_container_site_pv"><i class="fa fa-fw fa-user"></i>
+        浏览量：<span id="busuanzi_value_site_pv"></span>
+      </span>
+    
+  </div>
+
+  <div class="end-post-meta">
+    <span><i class="fa fa-fw fa-refresh"></i> 最后更新：2024-08-01, 13:56:06</span>
   </div>
 
 
@@ -328,7 +349,7 @@
 <!--  1-tab  -->
 <div class="title">随机文章<span class="sidetitle">回味旧文</span></div>
 <div class="item no-lrpadding">
-  <a class="post-link" href="/2023/01/10/Cutie%20Document/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">[Theme] Readme</div></div></a><a class="post-link" href="/2024/07/29/LaTeX-Test/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">LaTeX-Test</div></div></a><a class="post-link" href="/2024/07/29/hello-world/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">Hello World</div></div></a><a class="post-link" href="/2020/08/22/Cutie%20%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">Cutie 使用文档</div></div></a><a class="post-link" href="/2019/08/19/%E6%AC%A2%E8%BF%8E/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">欢迎</div></div></a>
+  <a class="post-link" href="/2020/08/22/Cutie%20%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">Cutie 使用文档</div></div></a><a class="post-link" href="/2023/01/10/Cutie%20Document/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">[Theme] Readme</div></div></a><a class="post-link" href="/2024/07/29/LaTeX-Test/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">LaTeX-Test</div></div></a><a class="post-link" href="/2024/07/29/hello-world/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">Hello World</div></div></a><a class="post-link" href="/2019/08/19/%E6%AC%A2%E8%BF%8E/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">欢迎</div></div></a>
 </div>
 <!--  END 1-tab  -->
 
@@ -338,7 +359,7 @@
 
 <div class="title">最近更新<span class="sidetitle">旧文更新</span></div>
 <div class="item no-lrpadding">
-  <a class="post-link" href="/2023/01/10/Cutie%20Document/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">[Theme] Readme</div></div></a><a class="post-link" href="/2019/08/19/%E6%AC%A2%E8%BF%8E/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">欢迎</div></div></a><a class="post-link" href="/2020/08/22/Cutie%20%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">Cutie 使用文档</div></div></a><a class="post-link" href="/2024/07/29/LaTeX-Test/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">LaTeX-Test</div></div></a><a class="post-link" href="/2024/07/29/hello-world/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">Hello World</div></div></a>
+  <a class="post-link" href="/2020/08/22/Cutie%20%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">Cutie 使用文档</div></div></a><a class="post-link" href="/2024/07/29/LaTeX-Test/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">LaTeX-Test</div></div></a><a class="post-link" href="/2023/01/10/Cutie%20Document/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">[Theme] Readme</div></div></a><a class="post-link" href="/2019/08/19/%E6%AC%A2%E8%BF%8E/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">欢迎</div></div></a><a class="post-link" href="/2024/07/29/hello-world/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">Hello World</div></div></a>
 </div>
 <!--  END 2-tab  -->
 
@@ -401,15 +422,21 @@
   <div class="item">
     <div class="title">博客信息</div>
     <div class="list-group">
+
       <div class="list-group-item"><div><i class="fa fa-file-text-o fa-fw"></i>
         文章数目</div><div class="badge">5</div>
       </div>
+
       <div class="list-group-item"><div><i class="fa fa-refresh fa-fw"></i>
         最近更新</div><div class="badge">08-01</div>
       </div>
+
       <div class="list-group-item"><div><i class="fa fa-font fa-fw"></i>
         本站字数</div><div class="badge">2.9k</span></div>
       </div>
+
+      
+      
     </div>
   </div>
 
