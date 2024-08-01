@@ -1282,6 +1282,9 @@ meting-js * {
 .archives .timeline t::after {
   top: 0.4em;
 }
+.archives p {
+  white-space: nowrap !important;
+}
 .category-list-item a {
   font-size: 20px;
 }

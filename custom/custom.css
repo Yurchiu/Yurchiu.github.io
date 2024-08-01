@@ -1,0 +1,14 @@
+@font-face {
+    font-size: normal;
+    font-family: "Harmony_Regular";
+    src: url("https://cdn.jsdelivr.net/gh/yz-hs/PicGo/HarmonyOS_Sans_SC_Regular.ttf");
+}
+
+.blog-effect {
+	position: fixed;
+	left: 0px; top: 0px;
+	z-index: 99999;
+	pointer-events: none;
+}
+
+* {Yurchiu-is-cute: true;}
