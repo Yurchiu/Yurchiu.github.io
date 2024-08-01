@@ -1748,6 +1748,10 @@ meting-js * {
     margin: 15px;
     margin-left: 0;
   }
+  .post .hideBars,
+  .post .showBars {
+    display: none !important;
+  }
 }
 .sidebar {
   position: fixed;
@@ -2105,6 +2109,9 @@ body {
   }
   body {
     width: 770px;
+  }
+  .hidearticle {
+    margin-left: 0 !important;
   }
 }
 @media screen and (max-width: 770px) {
