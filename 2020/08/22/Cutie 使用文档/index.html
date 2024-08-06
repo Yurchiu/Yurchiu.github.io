@@ -194,7 +194,7 @@
        
     </span>
     <span><i class="fa fa-clock-o"></i> 2020-08-22, 20:36:47</span>
-    <span><i class="fa fa-font"></i> 1.8k</span>
+    <span><i class="fa fa-font"></i> 1.9k</span>
     
     
     <span class="hideBars" onclick="hideBars()"><i class="fa fa-eye-slash"></i>
@@ -219,14 +219,14 @@
 </div>
 
 <div class="post-text">
-  <h1 id="cutie" tabindex="-1">Cutie</h1>
-<h2 id="%E4%BB%8B%E7%BB%8D" tabindex="-1">介绍</h2>
-<p><img src="https://cdn.jsdelivr.net/gh/yz-hs/PicGo/intro4.png" alt=""></p>
+  <h1 id="cutie"><a class="markdownIt-Anchor" href="#cutie"></a> Cutie</h1>
+<h2 id="介绍"><a class="markdownIt-Anchor" href="#介绍"></a> 介绍</h2>
+<p><img src="https://cdn.jsdelivr.net/gh/yz-hs/PicGo/intro4.png" alt="" /></p>
 <p>Cutie 是一个 Hexo 主题。本主题由 <a target="_blank" rel="noopener" href="https://github.com/Yurchiu/">Yurchiu</a> 制作，外观借鉴了 <a target="_blank" rel="noopener" href="https://www.ihewro.com/archives/489/">handsome</a> 主题，部分代码借鉴自 <a target="_blank" rel="noopener" href="https://mkblog.cn/">mkBlog</a>。本主题可在 <a target="_blank" rel="noopener" href="https://github.com/yz-hs/Cutie">Github</a> 获取。</p>
 <p>本主题依赖一些插件。请务必先看本文档，否则无法部署成功。</p>
 <p><strong>本主题仍在开发维护中。若有 Bug、优化需求等，可 Issue、PR 或在 <a href="https://Yurchiu.github.io/somepage/chat/">https://Yurchiu.github.io/somepage/chat/</a> 留言</strong>。</p>
 <span id="more"></span>
-<h2 id="%E7%89%B9%E7%82%B9" tabindex="-1">特点</h2>
+<h2 id="特点"><a class="markdownIt-Anchor" href="#特点"></a> 特点</h2>
 <ul>
 <li>自适应。</li>
 <li>支持多个第三方评论平台（Gitalk，Livere，Giscus 等等）。</li>
@@ -235,12 +235,12 @@
 <li>Pjax 支持。</li>
 <li>其他的许多特性！</li>
 </ul>
-<h2 id="todo-list" tabindex="-1">Todo List</h2>
+<h2 id="todo-list"><a class="markdownIt-Anchor" href="#todo-list"></a> Todo List</h2>
 <div class='checkbox'><input type="checkbox" />
             <p>在未来优化整体框架。</p>
             </div>
-<h2 id="%E9%A6%96%E6%AC%A1%E4%BD%BF%E7%94%A8" tabindex="-1">首次使用</h2>
-<h3 id="dependencies" tabindex="-1">Dependencies</h3>
+<h2 id="首次使用"><a class="markdownIt-Anchor" href="#首次使用"></a> 首次使用</h2>
+<h3 id="dependencies"><a class="markdownIt-Anchor" href="#dependencies"></a> Dependencies</h3>
 <ol>
 <li>
 <p>“RSS”依赖 <code>hexo-generator-feed</code> 插件来运行。 请运行 <code>npm install hexo-generator-feed</code>。</p>
@@ -262,93 +262,93 @@
 <p>推荐安装插件： <code>hexo-neat</code> <code>hexo-generator-sitemap</code> <code>hexo-butterfly-tag-plugins-plus</code>。</p>
 </li>
 </ol>
-<h3 id="%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE" tabindex="-1">代码高亮</h3>
+<h3 id="代码高亮"><a class="markdownIt-Anchor" href="#代码高亮"></a> 代码高亮</h3>
 <p>去掉博客配置文件的自带代码高亮即可。</p>
-<h3 id="%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F" tabindex="-1">数学公式</h3>
+<h3 id="数学公式"><a class="markdownIt-Anchor" href="#数学公式"></a> 数学公式</h3>
 <p>本主题不内置对数学公式的支持（但已经包含 CSS）。请按照以下方法来支持数学公式：</p>
 <p>Git bash 运行：</p>
-<pre><code class="language-bash">npm un hexo-renderer-marked
+<pre class="highlight"><code class="bash">npm un hexo-renderer-marked
 npm i hexo-renderer-markdown-it-plus
 npm i katex
 npm i @andatoshiki/markdown-it-katex
 </code></pre>
 <p>在博客配置文件写入：</p>
-<pre><code class="language-yaml">markdown_it_plus:
-  plugins:
-    - plugin:
-      name: '@iktakahiro/markdown-it-katex'
-      enable: false
-    - plugin:
-      name: '@andatoshiki/markdown-it-katex'
-      enable: true
+<pre class="highlight"><code class="yaml"><span class="hljs-attr">markdown_it_plus:</span>
+  <span class="hljs-attr">plugins:</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">plugin:</span>
+      <span class="hljs-attr">name:</span> <span class="hljs-string">&#x27;@iktakahiro/markdown-it-katex&#x27;</span>
+      <span class="hljs-attr">enable:</span> <span class="hljs-literal">false</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">plugin:</span>
+      <span class="hljs-attr">name:</span> <span class="hljs-string">&#x27;@andatoshiki/markdown-it-katex&#x27;</span>
+      <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span>
 </code></pre>
 <p>记得 <code>hexo clean</code>。</p>
-<h3 id="%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%BD%AE%E9%A1%B6" tabindex="-1">添加文章置顶</h3>
-<h4 id="%E6%96%B9%E6%B3%95%E4%B8%80" tabindex="-1">方法一</h4>
+<h3 id="添加文章置顶"><a class="markdownIt-Anchor" href="#添加文章置顶"></a> 添加文章置顶</h3>
+<h4 id="方法一"><a class="markdownIt-Anchor" href="#方法一"></a> 方法一</h4>
 <p>请在 <code>path-to-your-blog/node_modules/hexo-generator-index/lib/generator.js</code> 的合适位置添加如下代码：</p>
-<pre><code class="language-js">posts.data = posts.data.sort(function(a, b) &#123;
-      if(a.top &amp;&amp; b.top) &#123;
-          if(a.top == b.top) return b.date - a.date;
-          else return b.top - a.top;
+<pre class="highlight"><code class="js">posts.<span class="hljs-property">data</span> = posts.<span class="hljs-property">data</span>.<span class="hljs-title function_">sort</span>(<span class="hljs-keyword">function</span>(<span class="hljs-params">a, b</span>) &#123;
+      <span class="hljs-keyword">if</span>(a.<span class="hljs-property">top</span> &amp;&amp; b.<span class="hljs-property">top</span>) &#123;
+          <span class="hljs-keyword">if</span>(a.<span class="hljs-property">top</span> == b.<span class="hljs-property">top</span>) <span class="hljs-keyword">return</span> b.<span class="hljs-property">date</span> - a.<span class="hljs-property">date</span>;
+          <span class="hljs-keyword">else</span> <span class="hljs-keyword">return</span> b.<span class="hljs-property">top</span> - a.<span class="hljs-property">top</span>;
       &#125;
-      else if(a.top &amp;&amp; !b.top) &#123;
-          return -1;
+      <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(a.<span class="hljs-property">top</span> &amp;&amp; !b.<span class="hljs-property">top</span>) &#123;
+          <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>;
       &#125;
-      else if(!a.top &amp;&amp; b.top) &#123;
-          return 1;
+      <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(!a.<span class="hljs-property">top</span> &amp;&amp; b.<span class="hljs-property">top</span>) &#123;
+          <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
       &#125;
-      else return b.date - a.date;
+      <span class="hljs-keyword">else</span> <span class="hljs-keyword">return</span> b.<span class="hljs-property">date</span> - a.<span class="hljs-property">date</span>;
   &#125;);
 </code></pre>
 <p>如代码所示，“文章置顶” 原理是按照文章的 top 值排序，并加上 “置顶” 标签。</p>
-<h4 id="%E6%96%B9%E6%B3%95%E4%BA%8C" tabindex="-1">方法二</h4>
+<h4 id="方法二"><a class="markdownIt-Anchor" href="#方法二"></a> 方法二</h4>
 <p>卸载系统自带的排序插件：</p>
-<pre><code class="language-swift">npm uninstall hexo-generator-index
+<pre class="highlight"><code class="swift">npm uninstall hexo<span class="hljs-operator">-</span>generator<span class="hljs-operator">-</span>index
 </code></pre>
 <p>添加替代插件：</p>
-<pre><code class="language-swift">npm install hexo-generator-index-pin-top --save
+<pre class="highlight"><code class="swift">npm install hexo<span class="hljs-operator">-</span>generator<span class="hljs-operator">-</span>index<span class="hljs-operator">-</span>pin<span class="hljs-operator">-</span>top <span class="hljs-operator">--</span>save
 </code></pre>
 <p>同样按照文章 top 值排序。</p>
-<h2 id="%E9%A1%B5%E9%9D%A2%E9%85%8D%E7%BD%AE" tabindex="-1">页面配置</h2>
-<h3 id="tags%2Fcategories" tabindex="-1">Tags/Categories</h3>
+<h2 id="页面配置"><a class="markdownIt-Anchor" href="#页面配置"></a> 页面配置</h2>
+<h3 id="tagscategories"><a class="markdownIt-Anchor" href="#tagscategories"></a> Tags/Categories</h3>
 <p>设置“标签页面”或“分类页面”的方法是：在 front-matter 加上 <code>layout: tags/categories</code>。</p>
-<h3 id="search" tabindex="-1">Search</h3>
+<h3 id="search"><a class="markdownIt-Anchor" href="#search"></a> Search</h3>
 <p>本主题支持两种搜索方式：站内搜索和站外搜索。</p>
 <p>添加“搜索页面”方法：新建一个 page，在 front-matter 加上 <code>layout: search</code>。依赖 <code>hexo-generator-search</code>。</p>
 <p>这里的站外搜索使用必应搜索。对于其他搜索引擎，可以自己更改。</p>
 <p><strong>请注意：填入 search.xml 的链接时，一定要加上博客配置文件中的 url</strong>。</p>
-<h3 id="setting" tabindex="-1">Setting</h3>
+<h3 id="setting"><a class="markdownIt-Anchor" href="#setting"></a> Setting</h3>
 <p>本主题支持“设置页面”，供访者自主设置主题样式、特殊效果等。</p>
 <p>添加“设置页面”方法：新建一个 page，在 front-matter 加上 <code>layout: settings</code>。</p>
-<h3 id="mood" tabindex="-1">Mood</h3>
+<h3 id="mood"><a class="markdownIt-Anchor" href="#mood"></a> Mood</h3>
 <p>本主题支持“说说页面”。</p>
 <p>添加“说说页面”方法：新建一个 page，添加如下代码：</p>
-<pre><code class="language-html">title: 说说
+<pre class="highlight"><code class="html">title: 说说
 ---
 
-&lt;script&gt;
-  $(function()&#123;$(&quot;info&quot;).prepend(&quot;&lt;i class='fa fa-clock-o'&gt;&lt;/i&gt; &quot;);&#125;);
-&lt;/script&gt;
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript">
+  $(<span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)&#123;$(<span class="hljs-string">&quot;info&quot;</span>).<span class="hljs-title function_">prepend</span>(<span class="hljs-string">&quot;&lt;i class=&#x27;fa fa-clock-o&#x27;&gt;&lt;/i&gt; &quot;</span>);&#125;);
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 
-&lt;ul class=&quot;mood-list&quot;&gt;
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mood-list&quot;</span>&gt;</span>
 
-&lt;li&gt;&lt;!-- 头像，使用 img 标签 --&gt;&quot;&lt;text&gt;&lt;inner&gt;
-&lt;!-- 说说内容 --&gt;
-&lt;info&gt;&lt;!-- 说说发表时间 --&gt;&lt;/info&gt;&lt;/inner&gt;&lt;/text&gt;&lt;/li&gt;
+<span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-comment">&lt;!-- 头像，使用 img 标签 --&gt;</span>&quot;<span class="hljs-tag">&lt;<span class="hljs-name">text</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">inner</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- 说说内容 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">info</span>&gt;</span><span class="hljs-comment">&lt;!-- 说说发表时间 --&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">info</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">inner</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">text</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
-...&lt;!-- 不断重复第 10-12 行 --&gt;
+...<span class="hljs-comment">&lt;!-- 不断重复第 10-12 行 --&gt;</span>
 
-&lt;/ul&gt;
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
 </code></pre>
-<h3 id="404-page" tabindex="-1">404 page</h3>
+<h3 id="404-page"><a class="markdownIt-Anchor" href="#404-page"></a> 404 page</h3>
 <p>在博客配置文件写入：</p>
-<pre><code class="language-yaml">skip_render:
-  - '404.html'
+<pre class="highlight"><code class="yaml"><span class="hljs-attr">skip_render:</span>
+  <span class="hljs-bullet">-</span> <span class="hljs-string">&#x27;404.html&#x27;</span>
 </code></pre>
 <p>之后，把主题文件夹下的 <code>_doc/404.html</code> 置入博客 <code>source</code> 文件夹下（不是主题的 <code>source</code> 文件夹）。</p>
 <p>或者，创建新 page 作为 404 页面。在 front-matter 写入 <code>permalink: /404.html</code>。</p>
-<h2 id="%E5%85%B6%E4%BB%96" tabindex="-1">其他</h2>
-<h3 id="front-matter" tabindex="-1">Front-matter</h3>
+<h2 id="其他"><a class="markdownIt-Anchor" href="#其他"></a> 其他</h2>
+<h3 id="front-matter"><a class="markdownIt-Anchor" href="#front-matter"></a> Front-matter</h3>
 <p>本主题可设置如下 front-matter：</p>
 <ul>
 <li><code>discomments: true</code>——是否禁止评论。</li>
@@ -367,34 +367,34 @@ npm i @andatoshiki/markdown-it-katex
 <li><code>disfa: true</code>——禁用文章卡片的 Font Awesome 图标。</li>
 </ul>
 <p>注意：<code>bgimg</code> 和 <code>faname</code> 冲突。<code>bgimg</code> 优先。</p>
-<h3 id="%E7%A6%81%E7%94%A8-devtools" tabindex="-1">禁用 Devtools</h3>
+<h3 id="禁用-devtools"><a class="markdownIt-Anchor" href="#禁用-devtools"></a> 禁用 Devtools</h3>
 <p>在需禁用 Devtools 的页面加入如下代码：</p>
-<pre><code class="language-html">&lt;script src=&quot;/js/devtools.js&quot;&gt;&lt;/script&gt;
+<pre class="highlight"><code class="html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/js/devtools.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 </code></pre>
 <p>功能：</p>
 <ul>
 <li>当使用 Devtools 时，跳转网页；</li>
 <li>禁止右键，禁止选中文本。</li>
 </ul>
-<h3 id="custom" tabindex="-1">Custom</h3>
+<h3 id="custom"><a class="markdownIt-Anchor" href="#custom"></a> Custom</h3>
 <p>为了避免自主修改主题源码造成的麻烦，自定义 css 及 js 时，可以在 <code>/source/custom</code> 文件夹下自主添加所需要的 css 和 js 代码。</p>
 <p>主题只会引用其中的 <code>custom.css</code> 和 <code>custom.js</code>。</p>
-<h3 id="%E7%9F%AD%E4%BB%A3%E7%A0%81%E6%95%88%E6%9E%9C" tabindex="-1">短代码效果</h3>
+<h3 id="短代码效果"><a class="markdownIt-Anchor" href="#短代码效果"></a> 短代码效果</h3>
 <p>理论上 Bootstrap5 中的所有都可以使用。另外，本主题还包括下面的一些东西。</p>
 <details><summary>混乱文字</summary>
 <p><strong>代码</strong></p>
-<pre><code class="language-html">&lt;div class=&quot;chaffle&quot; data-lang=&quot;zh&quot;&gt;“她好可爱啊！”&lt;/div&gt;
+<pre class="highlight"><code class="html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;chaffle&quot;</span> <span class="hljs-attr">data-lang</span>=<span class="hljs-string">&quot;zh&quot;</span>&gt;</span>“她好可爱啊！”<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
 <p><strong>效果</strong></p>
 <div class="chaffle" data-lang="zh">“她好可爱啊！”</div>
 </details>
-<hr>
+<hr />
 <details><summary>展开折叠</summary>
 <p><strong>代码</strong></p>
-<pre><code class="language-html">&lt;details&gt;
-    &lt;summary&gt;请点击&lt;/summary&gt;
-    &lt;p&gt;就算风吹散了冰雪，想念也会留存下来。&lt;br /&gt;鼠标点击会展开此内容。&lt;/p&gt;
-&lt;/details&gt;
+<pre class="highlight"><code class="html"><span class="hljs-tag">&lt;<span class="hljs-name">details</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>请点击<span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>就算风吹散了冰雪，想念也会留存下来。<span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>鼠标点击会展开此内容。<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">details</span>&gt;</span>
 
 防止混淆的文字。
 </code></pre>
@@ -405,23 +405,23 @@ npm i @andatoshiki/markdown-it-katex
 </details>
 <p>防止混淆的文字。</p>
 </details>
-<hr>
+<hr />
 <details><summary>黑幕类</summary>
 <p><strong>代码</strong></p>
-<pre><code class="language-html">提示：&lt;shady title=&quot;你知道的太多了&quot;&gt;就算风吹散了冰雪，想念也会留存下来。鼠标移在此上会显示此内容&lt;/shady&gt;。仿自：[萌娘百科](https://zh.moegirl.org.cn/)。
+<pre class="highlight"><code class="html">提示：<span class="hljs-tag">&lt;<span class="hljs-name">shady</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;你知道的太多了&quot;</span>&gt;</span>就算风吹散了冰雪，想念也会留存下来。鼠标移在此上会显示此内容<span class="hljs-tag">&lt;/<span class="hljs-name">shady</span>&gt;</span>。仿自：[萌娘百科](https://zh.moegirl.org.cn/)。
 
-由于本句话被高度加密，即使使用小刀或者&lt;black title=&quot;你不知道的太多了&quot;&gt;除了被选中&lt;/black&gt;也无法划开屏幕上的部分黑幕。
+由于本句话被高度加密，即使使用小刀或者<span class="hljs-tag">&lt;<span class="hljs-name">black</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;你不知道的太多了&quot;</span>&gt;</span>除了被选中<span class="hljs-tag">&lt;/<span class="hljs-name">black</span>&gt;</span>也无法划开屏幕上的部分黑幕。
 
-提示：&lt;blur&gt;没错，你近视了。&lt;/blur&gt;&lt;invsb&gt;以至于你都看不见这句话。&lt;/invsb&gt;
+提示：<span class="hljs-tag">&lt;<span class="hljs-name">blur</span>&gt;</span>没错，你近视了。<span class="hljs-tag">&lt;/<span class="hljs-name">blur</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">invsb</span>&gt;</span>以至于你都看不见这句话。<span class="hljs-tag">&lt;/<span class="hljs-name">invsb</span>&gt;</span>
 
-&lt;blur&gt;
-&lt;fieldset&gt;
-    &lt;legend&gt;温馨提示&lt;/legend&gt;
+<span class="hljs-tag">&lt;<span class="hljs-name">blur</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">legend</span>&gt;</span>温馨提示<span class="hljs-tag">&lt;/<span class="hljs-name">legend</span>&gt;</span>
     你需要换眼镜。请立即赶往附近的眼镜店。
-&lt;/fieldset&gt;
-&lt;/blur&gt;
+<span class="hljs-tag">&lt;/<span class="hljs-name">fieldset</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">blur</span>&gt;</span>
 
-&lt;invsb&gt;&lt;div class=&quot;text-alert danger&quot;&gt;&lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt;不用换眼镜了。你已经看不见了。&lt;/div&gt;&lt;/invsb&gt;
+<span class="hljs-tag">&lt;<span class="hljs-name">invsb</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-alert danger&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-info-circle&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>不用换眼镜了。你已经看不见了。<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">invsb</span>&gt;</span>
 </code></pre>
 <p><strong>效果</strong></p>
 <p>提示：<shady title="你知道的太多了">就算风吹散了冰雪，想念也会留存下来。鼠标移在此上会显示此内容</shady>。仿自：<a target="_blank" rel="noopener" href="https://zh.moegirl.org.cn/">萌娘百科</a>。</p>
@@ -436,7 +436,7 @@ npm i @andatoshiki/markdown-it-katex
 <br>
 <div class="alert alert-danger"><invsb><i class="fa fa-info-circle"></i>不用换眼镜了。你已经看不见了。</invsb></div>
 </details>
-<hr>
+<hr />
 <details><summary>弹窗</summary>
 <p><strong>代码</strong></p>
 <p>请访问文章：<a href="/b12321c1b85e/">SweetAlert 的使用</a>。</p>
@@ -471,13 +471,13 @@ swal.fire({
 })})}
 </script>
 </details>
-<hr>
+<hr />
 <details><summary>提示框</summary>
 <p><strong>代码</strong></p>
-<pre><code class="language-html">&lt;fieldset&gt;
-    &lt;legend&gt;温馨提示&lt;/legend&gt;
-    &lt;p&gt;提示点什么好呢？让我想想……&lt;/p&gt;
-&lt;/fieldset&gt;
+<pre class="highlight"><code class="html"><span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">legend</span>&gt;</span>温馨提示<span class="hljs-tag">&lt;/<span class="hljs-name">legend</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>提示点什么好呢？让我想想……<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">fieldset</span>&gt;</span>
 </code></pre>
 <p><strong>效果</strong></p>
 <fieldset>
@@ -485,20 +485,20 @@ swal.fire({
     <p>提示点什么好呢？让我想想……</p>
 </fieldset>
 </details>
-<hr>
+<hr />
 <details><summary>分栏</summary>
 <p><strong>代码</strong></p>
 <p>html（建议不要复制这个）:</p>
-<pre><code class="language-html">&lt;div class=&quot;tab-page&quot;&gt;
- &lt;div class=&quot;tabTitle&quot;&gt;
-  &lt;ul&gt;
-    &lt;li class=&quot;current&quot;&gt;默认&lt;/li&gt;
-    &lt;li&gt;文字&lt;/li&gt;
-    &lt;li&gt;其他&lt;/li&gt;
-  &lt;/ul&gt;
- &lt;/div&gt;
- &lt;div class=&quot;tabContent&quot;&gt;
-  &lt;div&gt;
+<pre class="highlight"><code class="html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-page&quot;</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tabTitle&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;current&quot;</span>&gt;</span>默认<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>文字<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>其他<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tabContent&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
 请在 `tabTitle` 的第一个的 `li` 标签加上 `current` 类，除了 `tabContent` 的第一个 `div` 标签都加 `hide` 类。
 
 你可以加不止三个标签。不过太长会溢出。
@@ -506,51 +506,51 @@ swal.fire({
 以下是代码纯净版（建议复制这个）：
 
 ​```html
-&lt;div class=&quot;tab-page&quot;&gt;
- &lt;div class=&quot;tabTitle&quot;&gt;
-  &lt;ul&gt;
-    &lt;li class=&quot;current&quot;&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;/li&gt;
-  &lt;/ul&gt;
- &lt;/div&gt;
- &lt;div class=&quot;tabContent&quot;&gt;
-  &lt;div&gt;&lt;/div&gt;
-  &lt;div class=&quot;hide&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;hide&quot;&gt;&lt;/div&gt;
- &lt;/div&gt;
-&lt;/div&gt;
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-page&quot;</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tabTitle&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;current&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tabContent&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;hide&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;hide&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 ​```
 
-&lt;/div&gt;&lt;div class=&quot;hide&quot;&gt;
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;hide&quot;</span>&gt;</span>
 
 
 You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!
 
-&lt;/div&gt;&lt;div class=&quot;hide&quot;&gt;
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;hide&quot;</span>&gt;</span>
 
-&lt;details&gt;
-    &lt;summary&gt;请点击&lt;/summary&gt;
+<span class="hljs-tag">&lt;<span class="hljs-name">details</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>请点击<span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
 
 就算风吹散了冰雪，想念也会留存下来。
 
-&lt;/details&gt;
+<span class="hljs-tag">&lt;/<span class="hljs-name">details</span>&gt;</span>
 
-另一温馨提示：&lt;shady title=&quot;你知道的太多了&quot;&gt;是的，在标签页中也可加入HTML元素！&lt;/shady&gt;
+另一温馨提示：<span class="hljs-tag">&lt;<span class="hljs-name">shady</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;你知道的太多了&quot;</span>&gt;</span>是的，在标签页中也可加入HTML元素！<span class="hljs-tag">&lt;/<span class="hljs-name">shady</span>&gt;</span>
 
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
 <p>javascript:</p>
-<pre><code class="language-javascript">$(function()&#123;
-      var ali = $('tabTitle&gt;ul&gt;li');
-      var aDiv = $('tabContent&gt;div');
-      var timeId = null;
-      ali.click(function()&#123;
-        var _this = $(this);
-        timeId = setTimeout(function()&#123;
-          _this.addClass('current').siblings().removeClass('current');
-          var index = _this.index();
-          aDiv.eq(index).show().siblings().hide();
+<pre class="highlight"><code class="javascript">$(<span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)&#123;
+      <span class="hljs-keyword">var</span> ali = $(<span class="hljs-string">&#x27;tabTitle&gt;ul&gt;li&#x27;</span>);
+      <span class="hljs-keyword">var</span> aDiv = $(<span class="hljs-string">&#x27;tabContent&gt;div&#x27;</span>);
+      <span class="hljs-keyword">var</span> timeId = <span class="hljs-literal">null</span>;
+      ali.<span class="hljs-title function_">click</span>(<span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)&#123;
+        <span class="hljs-keyword">var</span> _this = $(<span class="hljs-variable language_">this</span>);
+        timeId = <span class="hljs-built_in">setTimeout</span>(<span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)&#123;
+          _this.<span class="hljs-title function_">addClass</span>(<span class="hljs-string">&#x27;current&#x27;</span>).<span class="hljs-title function_">siblings</span>().<span class="hljs-title function_">removeClass</span>(<span class="hljs-string">&#x27;current&#x27;</span>);
+          <span class="hljs-keyword">var</span> index = _this.<span class="hljs-title function_">index</span>();
+          aDiv.<span class="hljs-title function_">eq</span>(index).<span class="hljs-title function_">show</span>().<span class="hljs-title function_">siblings</span>().<span class="hljs-title function_">hide</span>();
         &#125;);
       &#125;);
   &#125;);
@@ -569,20 +569,20 @@ You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You
 请在 `tabTitle` 的第一个的 `li` 标签加上 `current` 类，除了 `tabContent` 的第一个 `div` 标签都加 `hide` 类。
 <p>你可以加不止三个标签。不过太长会溢出。</p>
 <p>以下是代码纯净版（建议复制这个）：</p>
-<pre><code class="language-html">&lt;div class=&quot;tab-page&quot;&gt;
- &lt;div class=&quot;tabTitle&quot;&gt;
-  &lt;ul&gt;
-    &lt;li class=&quot;current&quot;&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;/li&gt;
-  &lt;/ul&gt;
- &lt;/div&gt;
- &lt;div class=&quot;tabContent&quot;&gt;
-  &lt;div&gt;&lt;/div&gt;
-  &lt;div class=&quot;hide&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;hide&quot;&gt;&lt;/div&gt;
- &lt;/div&gt;
-&lt;/div&gt;
+<pre class="highlight"><code class="html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-page&quot;</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tabTitle&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;current&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tabContent&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;hide&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;hide&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
 </div><div class="hide">
 <p>You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!</p>
@@ -607,12 +607,12 @@ You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You
       });
   });</script>
 </details>
-<hr>
+<hr />
 <details><summary>标签</summary>
 <p><strong>代码</strong></p>
-<pre><code class="language-html">请在 `tabTitle` 的&lt;tag&gt;第一个&lt;/tag&gt;的 `li` 标签加上 `current` 类，除了 `tabContent` 的第一个 `div` 标签都加 `hide` 类。
+<pre class="highlight"><code class="html">请在 `tabTitle` 的<span class="hljs-tag">&lt;<span class="hljs-name">tag</span>&gt;</span>第一个<span class="hljs-tag">&lt;/<span class="hljs-name">tag</span>&gt;</span>的 `li` 标签加上 `current` 类，除了 `tabContent` 的第一个 `div` 标签都加 `hide` 类。
 
-你可以加&lt;tag&gt;不止三个&lt;/tag&gt;标签。不过太长会&lt;tag style=&quot;background: orange&quot;&gt;溢出&lt;/tag&gt;。
+你可以加<span class="hljs-tag">&lt;<span class="hljs-name">tag</span>&gt;</span>不止三个<span class="hljs-tag">&lt;/<span class="hljs-name">tag</span>&gt;</span>标签。不过太长会<span class="hljs-tag">&lt;<span class="hljs-name">tag</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background: orange&quot;</span>&gt;</span>溢出<span class="hljs-tag">&lt;/<span class="hljs-name">tag</span>&gt;</span>。
 
 `tag` 自动轮换四种背景色，当然也可以自己指定。
 </code></pre>
@@ -621,51 +621,51 @@ You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You
 <p>你可以加<tag>不止三个</tag>标签。不过太长会<tag style="background: orange">溢出</tag>。</p>
 <p><code>tag</code> 自动轮换四种背景色，当然也可以自己指定。</p>
 </details>
-<hr>
+<hr />
 <details><summary>小号文字</summary>
 ​    
 <p><strong>代码</strong></p>
-<pre><code class="language-html">温馨提示：提示点什么好呢&lt;small&gt;真的没有可提示的,,,&lt;/small&gt;
+<pre class="highlight"><code class="html">温馨提示：提示点什么好呢<span class="hljs-tag">&lt;<span class="hljs-name">small</span>&gt;</span>真的没有可提示的,,,<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
 </code></pre>
 <p><strong>效果</strong></p>
 <p>温馨提示：提示点什么好呢<small>真的没有可提示的,</small></p>
 </details>
-<hr>
+<hr />
 <details><summary>字幕</summary>
 <p><strong>代码</strong></p>
-<pre><code class="language-html">&lt;!--滚动方向 direction 4个值 up down left right  默认从右向左--&gt;
-&lt;marquee direction=&quot;up&quot;&gt;我向上滚动&lt;/marquee&gt;
+<pre class="highlight"><code class="html"><span class="hljs-comment">&lt;!--滚动方向 direction 4个值 up down left right  默认从右向左--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">marquee</span> <span class="hljs-attr">direction</span>=<span class="hljs-string">&quot;up&quot;</span>&gt;</span>我向上滚动<span class="hljs-tag">&lt;/<span class="hljs-name">marquee</span>&gt;</span>
 
-&lt;!--3个值 scroll-循环滚动 slide-只滚动一次 alternate-来回滚动  默认循环滚动--&gt;
-&lt;marquee behavior=&quot;slide&quot;&gt;我只滚动一次&lt;/marquee&gt;
+<span class="hljs-comment">&lt;!--3个值 scroll-循环滚动 slide-只滚动一次 alternate-来回滚动  默认循环滚动--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">marquee</span> <span class="hljs-attr">behavior</span>=<span class="hljs-string">&quot;slide&quot;</span>&gt;</span>我只滚动一次<span class="hljs-tag">&lt;/<span class="hljs-name">marquee</span>&gt;</span>
 
-&lt;!--值越大，滚动速度越快 一般5-10比较适宜消息观看--&gt;
-&lt;marquee scrollamount=&quot;20&quot;&gt;我是速度为20的滚动&lt;/marquee&gt;
+<span class="hljs-comment">&lt;!--值越大，滚动速度越快 一般5-10比较适宜消息观看--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">marquee</span> <span class="hljs-attr">scrollamount</span>=<span class="hljs-string">&quot;20&quot;</span>&gt;</span>我是速度为20的滚动<span class="hljs-tag">&lt;/<span class="hljs-name">marquee</span>&gt;</span>
 
-&lt;!--值越大，滚动速度越慢，通常不设置--&gt;
-&lt;marquee scrolldelay=&quot;110&quot;&gt;我延迟滚动&lt;/marquee&gt;
+<span class="hljs-comment">&lt;!--值越大，滚动速度越慢，通常不设置--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">marquee</span> <span class="hljs-attr">scrolldelay</span>=<span class="hljs-string">&quot;110&quot;</span>&gt;</span>我延迟滚动<span class="hljs-tag">&lt;/<span class="hljs-name">marquee</span>&gt;</span>
 
-&lt;!-- 默认值-1或infinite 表示无限循环滚动 loop=&quot;数值&quot; 表示滚动相应的次数--&gt;
-&lt;marquee loop=&quot;2&quot;&gt;我是loop循环滚动&lt;/marquee&gt;
+<span class="hljs-comment">&lt;!-- 默认值-1或infinite 表示无限循环滚动 loop=&quot;数值&quot; 表示滚动相应的次数--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">marquee</span> <span class="hljs-attr">loop</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>我是loop循环滚动<span class="hljs-tag">&lt;/<span class="hljs-name">marquee</span>&gt;</span>
 
-&lt;!--宽100px 高90px 背景色为#f5f5f5的滚动区域--&gt;
-&lt;marquee width=&quot;100&quot; height=&quot;90&quot; bgcolor=&quot;#f5f5f5&quot; &gt;
-    &lt;p&gt;我是滚动1&lt;/p&gt;
-    &lt;p&gt;我是滚动2&lt;/p&gt;
-    &lt;p&gt;我是滚动3&lt;/p&gt;
-&lt;/marquee&gt;
+<span class="hljs-comment">&lt;!--宽100px 高90px 背景色为#f5f5f5的滚动区域--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">marquee</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;100&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;90&quot;</span> <span class="hljs-attr">bgcolor</span>=<span class="hljs-string">&quot;#f5f5f5&quot;</span> &gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>我是滚动1<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>我是滚动2<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>我是滚动3<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">marquee</span>&gt;</span>
 
-&lt;!--滚动空间 hspace-水平边距 vspace-垂直边距--&gt;
-&lt;marquee width=&quot;50&quot; hspace=&quot;20&quot; vspace=&quot;10&quot; &gt;
-	&lt;p&gt;我是滚动1&lt;/p&gt;
-    &lt;p&gt;我是滚动2&lt;/p&gt;
-    &lt;p&gt;我是滚动3&lt;/p&gt;
-&lt;/marquee&gt;
+<span class="hljs-comment">&lt;!--滚动空间 hspace-水平边距 vspace-垂直边距--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">marquee</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;50&quot;</span> <span class="hljs-attr">hspace</span>=<span class="hljs-string">&quot;20&quot;</span> <span class="hljs-attr">vspace</span>=<span class="hljs-string">&quot;10&quot;</span> &gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>我是滚动1<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>我是滚动2<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>我是滚动3<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">marquee</span>&gt;</span>
 
-&lt;!--鼠标悬停，滚动停止   鼠标离开，滚动继续--&gt;
-&lt;marquee onmouseover=&quot;this.stop()&quot; onmouseout=&quot;this.start()&quot;&gt;
+<span class="hljs-comment">&lt;!--鼠标悬停，滚动停止   鼠标离开，滚动继续--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">marquee</span> <span class="hljs-attr">onmouseover</span>=<span class="hljs-string">&quot;this.stop()&quot;</span> <span class="hljs-attr">onmouseout</span>=<span class="hljs-string">&quot;this.start()&quot;</span>&gt;</span>
     我是滚动
-&lt;/marquee&gt;
+<span class="hljs-tag">&lt;/<span class="hljs-name">marquee</span>&gt;</span>
 </code></pre>
 <p><strong>效果</strong></p>
 <!--滚动方向 direction 4个值 up down left right  默认从右向左-->
@@ -695,14 +695,14 @@ You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You
 <p>我是滚动</p>
 </marquee>
 </details>
-<hr>
+<hr />
 <details><summary>时间轴</summary>
 <p><strong>代码</strong></p>
-<pre><code class="language-html">&lt;ol class=&quot;timeline&quot;&gt;
-    &lt;li&gt; &lt;t&gt;时间轴&lt;/t&gt; &lt;/li&gt;
-    &lt;li&gt; &lt;b&gt;2020/13/32&lt;/b&gt;&lt;p&gt;内容 1&lt;/p&gt; &lt;/li&gt;
-    &lt;li&gt; &lt;b&gt;2020/13/33&lt;/b&gt;&lt;p&gt;内容 2&lt;/p&gt; &lt;/li&gt;
-&lt;/ol&gt;
+<pre class="highlight"><code class="html"><span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;timeline&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">t</span>&gt;</span>时间轴<span class="hljs-tag">&lt;/<span class="hljs-name">t</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>2020/13/32<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>内容 1<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>2020/13/33<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>内容 2<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
 </code></pre>
 <p><strong>效果</strong></p>
 <ol class="timeline">
@@ -711,19 +711,19 @@ You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You
     <li> <b>2020/13/33</b><p>内容 2</p> </li>
 </ol>
 </details>
-<hr>
+<hr />
 <details><summary>注音</summary>
 <p><strong>代码</strong></p>
-<pre><code class="language-html">&lt;ruby&gt;
-那 &lt;rt&gt;n&lt;/rt&gt;
-没 &lt;rt&gt;m&lt;/rt&gt;
-事 &lt;rt&gt;s&lt;/rt&gt;
-了 &lt;rt&gt;l&lt;/rt&gt;
-&lt;/ruby&gt;
+<pre class="highlight"><code class="html"><span class="hljs-tag">&lt;<span class="hljs-name">ruby</span>&gt;</span>
+那 <span class="hljs-tag">&lt;<span class="hljs-name">rt</span>&gt;</span>n<span class="hljs-tag">&lt;/<span class="hljs-name">rt</span>&gt;</span>
+没 <span class="hljs-tag">&lt;<span class="hljs-name">rt</span>&gt;</span>m<span class="hljs-tag">&lt;/<span class="hljs-name">rt</span>&gt;</span>
+事 <span class="hljs-tag">&lt;<span class="hljs-name">rt</span>&gt;</span>s<span class="hljs-tag">&lt;/<span class="hljs-name">rt</span>&gt;</span>
+了 <span class="hljs-tag">&lt;<span class="hljs-name">rt</span>&gt;</span>l<span class="hljs-tag">&lt;/<span class="hljs-name">rt</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ruby</span>&gt;</span>
 
-&lt;ruby&gt;
-那没事了 &lt;rt&gt;nmsl&lt;/rt&gt;
-&lt;/ruby&gt;
+<span class="hljs-tag">&lt;<span class="hljs-name">ruby</span>&gt;</span>
+那没事了 <span class="hljs-tag">&lt;<span class="hljs-name">rt</span>&gt;</span>nmsl<span class="hljs-tag">&lt;/<span class="hljs-name">rt</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ruby</span>&gt;</span>
 </code></pre>
 <p><strong>效果</strong></p>
 <ruby>
@@ -736,7 +736,7 @@ You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You
 那没事了 <rt>nmsl</rt>
 </ruby>
 </details>
-<h3 id="%E5%A4%96%E6%8C%82%E6%A0%87%E7%AD%BE%E6%8F%92%E4%BB%B6-third-party" tabindex="-1">外挂标签插件 <code>Third Party</code></h3>
+<h3 id="外挂标签插件-third-party"><a class="markdownIt-Anchor" href="#外挂标签插件-third-party"></a> 外挂标签插件 <code>Third Party</code></h3>
 <p>参见 <a target="_blank" rel="noopener" href="https://akilar.top/posts/615e2dec/">https://akilar.top/posts/615e2dec/</a>。这里只展示效果。未列出的说明不支持，或不实用。通常会造成附近的 markdown 失效。</p>
 <p>要想使用它，需要安装第三方插件 <code>hexo-butterfly-tag-plugins-plus</code>。</p>
 <p><s>Yurchiu 已经很努力地尽量适配这个插件了哦！</s></p>
@@ -819,7 +819,7 @@ You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You
 <h4>折叠框 folding</h4>
 <details class="folding-tag" ><summary> 查看图片测试 </summary>
               <div class='content'>
-              <p><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg" alt=""></p>
+              <p><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg" alt="" /></p>
               </div>
             </details>
 
@@ -831,7 +831,7 @@ You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You
 
 <details class="folding-tag" green><summary> 查看代码测试 </summary>
               <div class='content'>
-              <p>貌似内部的代码不能正确换行。</p><pre><code class="language-javascript">posts.data = posts.data.sort(function(a, b) {      if(a.top &amp;&amp; b.top) {          if(a.top == b.top) return b.date - a.date;          else return b.top - a.top;      }      else if(a.top &amp;&amp; !b.top) {          return -1;      }      else if(!a.top &amp;&amp; b.top) {          return 1;      }      else return b.date - a.date;});</code></pre>
+              <p>貌似内部的代码不能正确换行。</p><pre class="highlight"><code class="javascript">posts.<span class="hljs-property">data</span> = posts.<span class="hljs-property">data</span>.<span class="hljs-title function_">sort</span>(<span class="hljs-keyword">function</span>(<span class="hljs-params">a, b</span>) {      <span class="hljs-keyword">if</span>(a.<span class="hljs-property">top</span> &amp;&amp; b.<span class="hljs-property">top</span>) {          <span class="hljs-keyword">if</span>(a.<span class="hljs-property">top</span> == b.<span class="hljs-property">top</span>) <span class="hljs-keyword">return</span> b.<span class="hljs-property">date</span> - a.<span class="hljs-property">date</span>;          <span class="hljs-keyword">else</span> <span class="hljs-keyword">return</span> b.<span class="hljs-property">top</span> - a.<span class="hljs-property">top</span>;      }      <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(a.<span class="hljs-property">top</span> &amp;&amp; !b.<span class="hljs-property">top</span>) {          <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>;      }      <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(!a.<span class="hljs-property">top</span> &amp;&amp; b.<span class="hljs-property">top</span>) {          <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;      }      <span class="hljs-keyword">else</span> <span class="hljs-keyword">return</span> b.<span class="hljs-property">date</span> - a.<span class="hljs-property">date</span>;});</code></pre>
               </div>
             </details>
 
@@ -860,20 +860,20 @@ You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You
 <div class="progress"><div class="progress-bar-animated progress-bar progress-bar-striped bg-gray"  style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><p>进度条样式预览</p></div></div>
 
 <h4>诗词标签 poem</h4>
-<div class='poem'><div class='poem-title'>水调歌头</div><div class='poem-author'>苏轼</div><p>丙辰中秋，欢饮达旦，大醉，作此篇，兼怀子由。<br>
-明月几时有？把酒问青天。<br>
-不知天上宫阙，今夕是何年？<br>
-我欲乘风归去，又恐琼楼玉宇，高处不胜寒。<br>
+<div class='poem'><div class='poem-title'>水调歌头</div><div class='poem-author'>苏轼</div><p>丙辰中秋，欢饮达旦，大醉，作此篇，兼怀子由。<br />
+明月几时有？把酒问青天。<br />
+不知天上宫阙，今夕是何年？<br />
+我欲乘风归去，又恐琼楼玉宇，高处不胜寒。<br />
 起舞弄清影，何似在人间？</p>
-<p>转朱阁，低绮户，照无眠。<br>
-不应有恨，何事长向别时圆？<br>
-人有悲欢离合，月有阴晴圆缺，此事古难全。<br>
+<p>转朱阁，低绮户，照无眠。<br />
+不应有恨，何事长向别时圆？<br />
+人有悲欢离合，月有阴晴圆缺，此事古难全。<br />
 但愿人长久，千里共婵娟。</p>
 </div>
 <h4>气泡注释 bubble</h4>
 最近我学到了不少新玩意儿（虽然对很多大佬来说这些已经是旧技术了），比如CSS的<span class="bubble-content">兄弟相邻选择器</span><span class="bubble-notation"><span class="bubble-item" style="background-color:#71a4e3;">例如 h1 + p {margin-top:50px;}</span></span>，<span class="bubble-content">Flex 布局</span><span class="bubble-notation"><span class="bubble-item" style="background-color:#ec5830;">Flex 是 Flexible Box 的缩写，意为弹性布局"，用来为盒状模型提供最大的灵活性"</span></span>，<span class="bubble-content">transform 变换</span><span class="bubble-notation"><span class="bubble-item" style="background-color:#1db675;">transform 属性向元素应用 2D 或 3D 转换。该属性允许我们对元素进行旋转、缩放、移动或倾斜。</span></span>，animation 的<span class="bubble-content">贝塞尔速度曲线</span><span class="bubble-notation"><span class="bubble-item" style="background-color:#de4489;">贝塞尔曲线(Bézier curve)，又称贝兹曲线或贝济埃曲线，是应用于二维图形应用程序的数学曲线。一般的矢量图形软件通过它来精确画出曲线，贝兹曲线由线段与节点组成，节点是可拖动的支点，线段像可伸缩的皮筋</span></span>写法，还有今天刚看到的 <span class="bubble-content">clip-path</span><span class="bubble-notation"><span class="bubble-item" style="background-color:#868fd7;">clip-path 属性使用裁剪方式创建元素的可显示区域。区域内的部分显示，区域外的隐藏。</span></span> 属性。这些对我来说很新颖的概念狠狠的冲击着我以前积累起来的设计思路。
 </details>
-<h2 id="%E9%99%84%E6%B3%A8" tabindex="-1">附注</h2>
+<h2 id="附注"><a class="markdownIt-Anchor" href="#附注"></a> 附注</h2>
 <ol>
 <li>推荐在文件 <code>path-to-your-blog/_config.yml</code> 中将 per_page 设置为 0。</li>
 <li>为防止喧宾夺主，本主题不再提供博客美化 js。</li>
@@ -935,9 +935,6 @@ You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You
       });
   });
 </script>
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/markdown-it-texmath/css/texmath.min.css">
-
   
   <br /><hr /><br />
   <blockquote>
@@ -1040,7 +1037,7 @@ You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You AK IOI!You
 <!--  1-tab  -->
 <div class="title">随机文章<span class="sidetitle">回味旧文</span></div>
 <div class="item no-lrpadding">
-  <a class="post-link" href="/2023/01/10/Cutie%20Document/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">[Theme] Readme</div></div></a><a class="post-link" href="/2024/07/29/LaTeX-Test/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">LaTeX-Test</div></div></a><a class="post-link" href="/2020/08/22/Cutie%20%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">Cutie 使用文档</div></div></a><a class="post-link" href="/2019/10/03/Hexo%20%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">Hexo 博客搭建</div></div></a><a class="post-link" href="/2024/07/29/hello-world/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">Hello World</div></div></a><a class="post-link" href="/2024/08/02/%E3%80%8A%E5%B9%BD%E9%BB%98%E6%8A%A5%2011%E3%80%8B/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">《幽默报 11》</div></div></a><a class="post-link" href="/2024/08/06/%E3%80%90%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95%E3%80%91%E5%87%86%E7%BA%BF%E4%B8%8E%E7%84%A6%E7%82%B9/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">【解析几何】准线与焦点</div></div></a>
+  <a class="post-link" href="/2023/01/10/Cutie%20Document/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">[Theme] Readme</div></div></a><a class="post-link" href="/2020/08/22/Cutie%20%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">Cutie 使用文档</div></div></a><a class="post-link" href="/2019/10/03/Hexo%20%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">Hexo 博客搭建</div></div></a><a class="post-link" href="/2024/07/29/LaTeX-Test/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">LaTeX-Test</div></div></a><a class="post-link" href="/2024/08/02/%E3%80%8A%E5%B9%BD%E9%BB%98%E6%8A%A5%2011%E3%80%8B/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">《幽默报 11》</div></div></a><a class="post-link" href="/2024/07/29/hello-world/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">Hello World</div></div></a><a class="post-link" href="/2024/08/06/%E3%80%90%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95%E3%80%91%E5%87%86%E7%BA%BF%E4%B8%8E%E7%84%A6%E7%82%B9/"><div class="title_fa"><i class="fa fa-file-text-o fa-border" style="height: 30px;border: none;"></i><div class="title">【解析几何】准线与焦点</div></div></a>
 </div>
 <!--  END 1-tab  -->
 
